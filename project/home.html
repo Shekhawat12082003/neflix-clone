@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zetflix</title>
+    <link rel="stylesheet"
+    href="home.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>Zetflix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Movies</li>
+                <li>Series</li>
+                <li>My List</li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for a movie...">
+            <span class="search-icon">&#128269;</span>
+        </div>
+        <div class="profile-bar" onclick="openProfileModal()">
+            <img src="https://via.placeholder.com/30" alt="Profile Image">
+            <span>Profile</span>
+        </div>
+    </header>
+
+    <div id="profileModal" class="profile-modal">
+        <div class="profile-modal-content">
+            <span class="close-btn" onclick="closeProfileModal()">&times;</span>
+            <h2>Profile</h2>
+            <div class="profile-img">
+                <img src="pic.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-details">
+                <p><strong>Username:</strong> <span id="username">Zetflix</span></p>
+                <button onclick="changeUsername()">Change Username</button>
+                <button onclick="changePassword()">Change Password</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Stranger Things</h1>
+            <p>#1 in TV Shows Today</p>
+            <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, supernatural forces, and one strange little girl.</p>
+            <div class="btn-group">
+                <button class="watch-btn">Watch Now</button>
+                <button class="list-btn">Add to List</button>
+            </div>
+        </div>
+    </section>
+
+     <!-- Trending Now Section -->
+     <section class="trending-now">
+        <h2>Trending Now</h2>
+        <div class="movie-cards scrollable">
+            <a href="movies/Fast X 480p.mp4" class="card">
+                <img src="https://image.tmdb.org/t/p/original/zeJhXyQ6vKyVlKEfNXkUww19SmY.jpg" alt="Movie 1"> 
+                <div class="card-details">Fast X<br>Genre:Action <br>Year: 2023 </div>
+            </a>
+            <a href="movies/The Flash 480p.mp4" class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSreLwsgx4aCN7SuJAINZW7pZogTVkS43Xpwg&s" alt="Movie 2"> 
+                <div class="card-details">The Flash<br>Genre: Action/Sci-fi<br>Year: 2021</div>
+            </a>
+            <a href="movies/Across the Spider-Verse 480p.mp4" class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibRNnXzNYoMEwMayUsWS2u1auoiao5Z4KDw&s" alt="Movie 3"> 
+                <div class="card-details">Spider man:Across The Spider Verse<br>Genre:Action/Comedy<br>Year: 2023</div>
+            </a>
+            <a href="movie4-details.html" class="card">
+                <img src="https://musicart.xboxlive.com/7/f3f05100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="Movie 4"> 
+                <div class="card-details">Dune<br>Genre:Sci-fi/Adventure<br>Year: 2021</div>
+            </a>
+            <a href="movies/Extraction 2 480p.mp4" class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7et2jrP1E0CLUNFu8OnnS7mBoSG1DCATHcu1rWtZjVlxJD6bFEj21jIwO24EkzfLJxM&usqp=CAU" alt="Movie 5"> 
+                <div class="card-details">Extraction 2<br>Genre:Action/Thriller <br>Year: 2023</div>
+            </a>
+            <a href="movies/Transformers R.B 480p.mp4" class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW2Oz7CKRaOLHEs_xUhZ__NlHt-p4UZRa1O9K28UQxA0QexgBgMmUeSVUuE9WLpMDF_SphXFJ2oO2QqtLDzIkoadraEaNgChIHvtHG8sUMog9UDIxyxlsXrejmEXGwmMjhprNA8UbttnUOqYpEHxAkOi5672AsZCJKQFjlkjs7rOhUBNc-zg/s2048/TFROTBOptimusPrimePoster2.jpg" alt="Movie 6">
+                <div class="card-details">Transformers  <br>Genre:Action/Sci-fi<br>Year: 2007</div>
+            </a>
+            
+    </section>
+
+    <!-- Popular on Zetflix Section -->
+    <section class="popular">
+        <h2>Popular on Zetflix</h2>
+        <div class="movie-cards scrollable">
+            <a href="movies/venom.mp4" class="card">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn1.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRq4Qa3MAAivNJyea1UXMa-rGtLBxUtwS20KiiOF4r4oTNU0x1j&psig=AOvVaw38u_XNsiewgOsBxom25yzJ&ust=1731752888801000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJD687GQ3okDFQAAAAAdAAAAABAE" alt="Popular 1"> 
+                <div class="card-details">Venom:The Last Dance<br>Genre: Action<br>Year: 2021</div>
+            </a>
+            <a href="movies/Guardians Of The Galaxy Vol 3 480p.mp4" class="card">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202106/0215/Pw9cWnyqkix3EoCOGqrN1cgN.png" alt="Popular 2"> 
+                <div class="card-details">Guardians of the Galaxy<br>Genre:Action/Sci-fi <br>Year: 2014</div>
+            </a>
+            <a href="movies/Harry Potter.mp4" class="card">
+                <img src="https://m.media-amazon.com/images/I/914pEgyd14L._AC_UF1000,1000_QL80_.jpg" alt="Popular 3"> 
+                <div class="card-details">Harry Potter<br>Genre:Family/Fantasy<br>Year: 2008</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Top Picks for You Section -->
+    <section class="top-picks">
+        <h2>Top Picks for You</h2>
+        <div class="movie-cards scrollable">
+            <a href="movies/Loki S1 480p.mp4" class="card">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p19575003_b_v13_aa.jpg" alt="Top Pick 1"> <!-- Replace with actual movie image -->
+                <div class="card-details">Loki<br>Genre:Drama<br>Year: 2021</div>
+            </a>
+            <a href="top2-details.html" class="card">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/pp_disney_blackpanther_wakandaforever_1289_d3419b8f.jpeg" alt="Top Pick 2"> <!-- Replace with actual movie image -->
+                <div class="card-details">Top Pick 2<br>Genre: Thriller<br>Year: 2026</div>
+            </a>
+            <a href="/movies/open.mp4" class="card">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fed30681-c60e-4ae9-a39f-6111345d36c7/dfuuaml-d4aa578b-a551-4bda-9970-4d5253eab495.png/v1/fill/w_1280,h_1897,q_80,strp/oppenheimer_fan_made_poster_by_artguy916_dfuuaml-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg5NyIsInBhdGgiOiJcL2ZcL2ZlZDMwNjgxLWM2MGUtNGFlOS1hMzlmLTYxMTEzNDVkMzZjN1wvZGZ1dWFtbC1kNGFhNTc4Yi1hNTUxLTRiZGEtOTk3MC00ZDUyNTNlYWI0OTUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.VeaCbtKPnzvOpLFHJ0tOuHQ4lTZNWYG9vGmgm0VoUNI" alt="Top Pick 3"> <!-- Replace with actual movie image -->
+                <div class="card-details">Oppenheimer<br>Genre:Thriller/Historical drama <br>Year: 2023</div>
+            </a>
+            <a href="top4-details.html" class="card">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_20cs_avatarwayofwater_mayupdate_1710_260aa445.jpeg" alt="Top Pick 4"> <!-- Replace with actual movie image -->
+                <div class="card-details">Top Pick 4<br>Genre: Drama<br>Year: 2022</div>
+            </a>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Help Center</li>
+                <li>Contact Us</li>
+            </ul>
+            <p>&copy; ................................</p>
+        </div>
+    </footer>
+    <script src="home.js"></script>    
+</body>
+</html> 
